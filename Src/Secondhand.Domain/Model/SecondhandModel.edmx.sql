@@ -1,8 +1,7 @@
-
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 11/07/2018 10:12:59
+-- Date Created: 11/07/2018 11:08:33
 -- Generated from EDMX file: F:\ProbeIPA\Src\Secondhand.Domain\Model\SecondhandModel.edmx
 -- --------------------------------------------------
 
@@ -17,11 +16,20 @@ GO
 -- Dropping existing FOREIGN KEY constraints
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[FK_UserItem]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[Items] DROP CONSTRAINT [FK_UserItem];
+GO
 
 -- --------------------------------------------------
 -- Dropping existing tables
 -- --------------------------------------------------
 
+IF OBJECT_ID(N'[dbo].[Items]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Items];
+GO
+IF OBJECT_ID(N'[dbo].[Users]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Users];
+GO
 
 -- --------------------------------------------------
 -- Creating all tables
@@ -36,8 +44,7 @@ CREATE TABLE [dbo].[Users] (
     [Street] nvarchar(max)  NOT NULL,
     [City] nvarchar(max)  NOT NULL,
     [Zip] nvarchar(max)  NOT NULL,
-    [Country] nvarchar(max)  NOT NULL,
-    [FkItem] nvarchar(max)  NOT NULL
+    [Country] nvarchar(max)  NOT NULL
 );
 GO
 

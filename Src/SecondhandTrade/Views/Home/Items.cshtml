@@ -4,10 +4,9 @@
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
-
-<div class="row">
-    @*@foreach (Item item in Model)
-    {*@
+@foreach (Item item in Model)
+{
+    <div class="row">
     <a>
         @Html.ActionLink("Home", "Index", "Home")
         <div class="col-md-4">
@@ -37,6 +36,6 @@
                 <h2>Tabo 3</h2>
                 <p>10.00$</p>
             </div>
-        </a>   
-    @*}*@
+        </a>
 </div>
+}
