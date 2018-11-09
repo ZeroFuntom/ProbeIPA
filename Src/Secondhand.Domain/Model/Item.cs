@@ -17,7 +17,7 @@ namespace Secondhand.Domain.Model
         public int Id { get; set; }
         public string ItemName { get; set; }
         public string Description { get; set; }
-        public string Image { get; set; }
+        public byte[] Image { get; set; }
         public int Year { get; set; }
         public int Price { get; set; }
         public int UserId { get; set; }

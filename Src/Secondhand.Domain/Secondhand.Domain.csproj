@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\ISecondhandContext.cs" />
     <Compile Include="Model\Item.cs">
       <DependentUpon>SecondhandModel.tt</DependentUpon>
     </Compile>

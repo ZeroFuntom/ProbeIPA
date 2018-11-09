@@ -1,7 +1,8 @@
+
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 11/07/2018 11:08:33
+-- Date Created: 11/08/2018 11:16:55
 -- Generated from EDMX file: F:\ProbeIPA\Src\Secondhand.Domain\Model\SecondhandModel.edmx
 -- --------------------------------------------------
 
@@ -24,11 +25,11 @@ GO
 -- Dropping existing tables
 -- --------------------------------------------------
 
-IF OBJECT_ID(N'[dbo].[Items]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[Items];
-GO
 IF OBJECT_ID(N'[dbo].[Users]', 'U') IS NOT NULL
     DROP TABLE [dbo].[Users];
+GO
+IF OBJECT_ID(N'[dbo].[Items]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Items];
 GO
 
 -- --------------------------------------------------
@@ -43,7 +44,7 @@ CREATE TABLE [dbo].[Users] (
     [LastName] nvarchar(max)  NOT NULL,
     [Street] nvarchar(max)  NOT NULL,
     [City] nvarchar(max)  NOT NULL,
-    [Zip] nvarchar(max)  NOT NULL,
+    [Zip] int  NOT NULL,
     [Country] nvarchar(max)  NOT NULL
 );
 GO
@@ -53,8 +54,9 @@ CREATE TABLE [dbo].[Items] (
     [Id] int IDENTITY(1,1) NOT NULL,
     [ItemName] nvarchar(max)  NOT NULL,
     [Description] nvarchar(max)  NOT NULL,
-    [Year] nvarchar(max)  NOT NULL,
-    [Price] nvarchar(max)  NOT NULL,
+    [Image] varbinary(max)  NOT NULL,
+    [Year] int  NOT NULL,
+    [Price] int  NOT NULL,
     [UserId] int  NOT NULL
 );
 GO

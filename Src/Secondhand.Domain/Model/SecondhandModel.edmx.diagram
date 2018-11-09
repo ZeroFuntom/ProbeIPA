@@ -5,8 +5,8 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="021920ff5cc8443c85af89438e590632" Name="Diagram1" >
-        <EntityTypeShape EntityType="SecondhandModel.User" Width="1.5" PointX="6.125" PointY="2.5" />
-        <EntityTypeShape EntityType="SecondhandModel.Item" Width="1.5" PointX="8.5" PointY="2.5" />
+        <EntityTypeShape EntityType="SecondhandModel.User" Width="1.5" PointX="0.75" PointY="2.375" />
+        <EntityTypeShape EntityType="SecondhandModel.Item" Width="1.5" PointX="3.375" PointY="2.375" />
         <AssociationConnector Association="SecondhandModel.UserItem" />
       </Diagram>
     </edmx:Diagrams>

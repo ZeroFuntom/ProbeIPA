@@ -1,15 +1,19 @@
 ﻿using System.Web.Mvc;
+//using Secondhand.BusinessLogic.Teams;
+//using Secondhand.Domain.Model;
+//using Secondhand.Web.Models;
 
 namespace SecondhandTrade.Controllers
 {
-    public class HomeController : Controller
+    public class ItemController : Controller
     {
+
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Detail()
         {
             return View();
         }
