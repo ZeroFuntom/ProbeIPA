@@ -1,17 +1,25 @@
-﻿@*@using Secondhand.Domain.Model*@
+﻿@Html.DisplayForModel()
+@Html.LabelForModel()
+@using Secondhand.Domain.Model
+@model IEnumerable<Item>
+
 @{
     ViewBag.Title = "Items";
 }
+
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
-<a>
-    <div class="col-md-4">
-        @Html.ActionLink("Details", "Detail", "Item")
-        <p>
-            <img src="https://wanderlustandsmoke.files.wordpress.com/2017/08/filipino-tabo-hinoki-plastic-ladle-1.jpg?w=286&h=212" />
-        </p>
-        <h2>Tabo 1</h2>
-        <p>10.00$</p>
-    </div>
-</a>
+@*@foreach (Item item in Model)
+{*@
+    <a>
+        <div class="col-md-4">
+            @Html.ActionLink("Details", "Detail", "Item")
+            <p>
+                <img src="https://wanderlustandsmoke.files.wordpress.com/2017/08/filipino-tabo-hinoki-plastic-ladle-1.jpg?w=286&h=212" />
+            </p>
+            <h2>ItemName</h2>
+            <p>Price</p>
+        </div>
+    </a>
+@*}*@

@@ -1,7 +1,5 @@
 ﻿using System.Web.Mvc;
-//using Secondhand.BusinessLogic.Teams;
-//using Secondhand.Domain.Model;
-//using Secondhand.Web.Models;
+using SecondhandTrade.Models;
 
 namespace SecondhandTrade.Controllers
 {
@@ -17,5 +15,12 @@ namespace SecondhandTrade.Controllers
         {
             return View();
         }
+
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Add(AddItemVm item)
+        //{
+        //    // Implementieren
+        //}
     }
 }

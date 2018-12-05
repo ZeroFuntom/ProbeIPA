@@ -148,6 +148,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AddItemVM.cs" />
+    <Compile Include="Models\ItemListVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -188,10 +190,10 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Item\Detail.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\Item\AddItem.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -205,6 +207,12 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Secondhand.Domain\Secondhand.Domain.csproj">
+      <Project>{5638E8EC-750A-4809-A4E0-54534E9AF99C}</Project>
+      <Name>Secondhand.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

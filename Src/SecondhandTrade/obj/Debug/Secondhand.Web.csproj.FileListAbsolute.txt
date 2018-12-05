@@ -36,7 +36,6 @@ G:\ProbeIPA\Src\SecondhandTrade\bin\Microsoft.AI.DependencyCollector.xml
 G:\ProbeIPA\Src\SecondhandTrade\bin\Microsoft.AI.ServerTelemetryChannel.xml
 G:\ProbeIPA\Src\SecondhandTrade\bin\Microsoft.AI.WindowsServer.xml
 G:\ProbeIPA\Src\SecondhandTrade\bin\Microsoft.AI.Web.xml
-G:\ProbeIPA\Src\SecondhandTrade\obj\Debug\Secondhand.Web.csprojResolveAssemblyReference.cache
 G:\ProbeIPA\Src\SecondhandTrade\obj\Debug\Secondhand.Web.csproj.CoreCompileInputs.cache
 G:\ProbeIPA\Src\SecondhandTrade\obj\Debug\SecondhandTrade.dll
 G:\ProbeIPA\Src\SecondhandTrade\obj\Debug\SecondhandTrade.pdb
@@ -83,3 +82,9 @@ F:\ProbeIPA\Src\SecondhandTrade\obj\Debug\Secondhand.Web.csproj.CoreCompileInput
 F:\ProbeIPA\Src\SecondhandTrade\obj\Debug\Secondhand.Web.csproj.CopyComplete
 F:\ProbeIPA\Src\SecondhandTrade\obj\Debug\SecondhandTrade.dll
 F:\ProbeIPA\Src\SecondhandTrade\obj\Debug\SecondhandTrade.pdb
+G:\ProbeIPA\Src\SecondhandTrade\obj\Debug\Secondhand.Web.csprojResolveAssemblyReference.cache
+G:\ProbeIPA\Src\SecondhandTrade\bin\Secondhand.Domain.dll
+G:\ProbeIPA\Src\SecondhandTrade\bin\EntityFramework.dll
+G:\ProbeIPA\Src\SecondhandTrade\bin\Secondhand.Domain.pdb
+G:\ProbeIPA\Src\SecondhandTrade\bin\Secondhand.Domain.dll.config
+G:\ProbeIPA\Src\SecondhandTrade\bin\EntityFramework.xml
