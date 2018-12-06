@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Secondhand.BusinessLogic.Items
 {
-    class IItemService
+    public interface IItemService
     {
         IEnumerable<Item> GetItems();
     }

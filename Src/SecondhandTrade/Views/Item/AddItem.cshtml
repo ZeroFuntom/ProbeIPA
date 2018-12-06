@@ -1,0 +1,42 @@
+﻿@model SecondhandTrade.Models.AddItemVm
+
+@{
+    ViewBag.Title = "AddItem";
+}
+
+@using (Html.BeginForm("Add", "Item", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <h2>Upload your old item</h2>
+
+    <div class="form-group">
+        @Html.LabelFor(x => x.ItemName)
+        @Html.EditorFor(x => x.ItemName)
+        @Html.ValidationMessageFor(x => x.ItemName)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.ItemName)
+        @Html.EditorFor(x => x.ItemName)
+        @Html.ValidationMessageFor(x => x.ItemName)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.ItemName)
+        @Html.EditorFor(x => x.ItemName)
+        @Html.ValidationMessageFor(x => x.ItemName)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.ItemName)
+        @Html.EditorFor(x => x.ItemName)
+        @Html.ValidationMessageFor(x => x.ItemName)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(x => x.ItemName)
+        @Html.EditorFor(x => x.ItemName)
+        @Html.ValidationMessageFor(x => x.ItemName)
+    </div>
+}
+
+
+
+

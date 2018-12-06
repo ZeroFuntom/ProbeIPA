@@ -1,16 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using Secondhand.BusinessLogic.Users;
 
 namespace SecondhandTrade.Controllers
 {
     public class UserController : Controller
     {
+        private readonly IUserService _userService;
+
+        public UserController(IUserService userService)
+        {
+            _userService = userService;
+        }
+
+        [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            return View(_userService.GetUsers());
         }
     }
 }

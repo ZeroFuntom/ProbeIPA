@@ -53,6 +53,7 @@
     <Compile Include="Model\Item.cs">
       <DependentUpon>SecondhandModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\SecondhandContext.cs" />
     <Compile Include="Model\SecondhandModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

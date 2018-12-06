@@ -1,26 +1,26 @@
 ﻿using System.Web.Mvc;
-using SecondhandTrade.Models;
+using Secondhand.BusinessLogic.Items;
 
 namespace SecondhandTrade.Controllers
 {
     public class ItemController : Controller
     {
+        private readonly IItemService _itemService;
 
+        public ItemController(IItemService itemService)
+        {
+            _itemService = itemService;
+        }
+
+        [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            return View(_itemService.GetItems());
         }
 
         public ActionResult Detail()
         {
             return View();
         }
-
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Add(AddItemVm item)
-        //{
-        //    // Implementieren
-        //}
     }
 }

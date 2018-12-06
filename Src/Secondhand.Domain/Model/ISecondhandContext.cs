@@ -2,10 +2,9 @@
 
 namespace Secondhand.Domain.Model
 {
-    public interface IWiwaContext
+    public interface ISecondhandContext
     {
-        DbSet<Item> Items { get; set; }
-        DbSet<User> Users { get; set; }
-        int SaveChanges();
+        DbSet<User> Users { get; }
+        DbSet<Item> Items { get; }
     }
 }

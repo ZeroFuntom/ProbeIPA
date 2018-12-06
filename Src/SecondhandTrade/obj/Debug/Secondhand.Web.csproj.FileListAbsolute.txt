@@ -88,3 +88,11 @@ G:\ProbeIPA\Src\SecondhandTrade\bin\EntityFramework.dll
 G:\ProbeIPA\Src\SecondhandTrade\bin\Secondhand.Domain.pdb
 G:\ProbeIPA\Src\SecondhandTrade\bin\Secondhand.Domain.dll.config
 G:\ProbeIPA\Src\SecondhandTrade\bin\EntityFramework.xml
+G:\ProbeIPA\Src\SecondhandTrade\bin\Secondhand.BusinessLogic.dll
+G:\ProbeIPA\Src\SecondhandTrade\bin\Secondhand.BusinessLogic.pdb
+G:\ProbeIPA\Src\SecondhandTrade\bin\Autofac.dll
+G:\ProbeIPA\Src\SecondhandTrade\bin\Autofac.Integration.Mvc.dll
+G:\ProbeIPA\Src\SecondhandTrade\bin\Autofac.xml
+G:\ProbeIPA\Src\SecondhandTrade\bin\Autofac.Integration.Mvc.xml
+G:\ProbeIPA\Src\SecondhandTrade\bin\EntityFramework.SqlServer.dll
+G:\ProbeIPA\Src\SecondhandTrade\bin\EntityFramework.SqlServer.xml

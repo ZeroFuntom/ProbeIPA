@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using Secondhand.Domain.Model;
 
 namespace Secondhand.BusinessLogic.Users
 {
-    class IUserService
+    public interface IUserService
     {
+        IEnumerable<User> GetUsers();
     }
 }
