@@ -1,39 +1,65 @@
 ﻿@using Secondhand.Domain.Model
 @model User
 
-@using (Html.BeginForm("Save", "User", FormMethod.Post))
-{
-    @Html.AntiForgeryToken()
+@*@using (Html.BeginForm("Save", "User", FormMethod.Post))
+{*@
+
+@{
+    var UserName = "";
+    var FirstName = "";
+    var LastName = "";
+    var Street = "";
+    var City = "";
+    var Zip = "";
+    var Country = "";
+    var Password = "";
+
+    if (IsPost)
+    {
+        UserName = Request.Form["UserName"];
+        FirstName = Request.Form["FirstName"];
+        LastName = Request.Form["LastName"];
+        Street = Request.Form["Street"];
+        City = Request.Form["City"];
+        Zip = Request.Form["Zip"];
+        Country = Request.Form["Country"];
+        Password = Request.Form["Password"];
+    }
+}
 
 <form>
     <div class="form-group">
         <label for="inputEmail">User Name</label>
-        <input type="text" class="form-control" id="inputEmail" placeholder="User Name">
+        <input type="text" class="form-control" id="inputEmail" placeholder="User Name" value="@Request.Form["UserName"]">
     </div>
     <div class="form-group">
         <label for="inputPassword">First Name</label>
-        <input type="text" class="form-control" id="inputPassword" placeholder="First Name">
+        <input type="text" class="form-control" id="inputPassword" placeholder="First Name" value="@Request.Form["FirstName"]">
     </div>
     <div class="form-group">
         <label for="inputPassword">Last Name</label>
-        <input type="text" class="form-control" id="inputPassword" placeholder="Last Name">
+        <input type="text" class="form-control" id="inputPassword" placeholder="Last Name" value="@Request.Form["LastName"]">
     </div>
     <div class="form-group">
         <label for="inputPassword">Street</label>
-        <input type="text" class="form-control" id="inputPassword" placeholder="City">
+        <input type="text" class="form-control" id="inputPassword" placeholder="Street" value="@Request.Form["Street"]">
+    </div>
+    <div class="form-group">
+        <label for="inputPassword">City</label>
+        <input type="text" class="form-control" id="inputPassword" placeholder="City" value="@Request.Form["City"]">
     </div>
     <div class="form-group">
         <label for="inputPassword">ZIP Code</label>
-        <input type="text" class="form-control" id="inputPassword" placeholder="ZIP Code">
+        <input type="text" class="form-control" id="inputPassword" placeholder="ZIP Code" value="@Request.Form["Zip"]">
     </div>
     <div class="form-group">
         <label for="inputPassword">Country</label>
-        <input type="text" class="form-control" id="inputPassword" placeholder="Country">
+        <input type="text" class="form-control" id="inputPassword" placeholder="Country" value="@Request.Form["Country"]">
     </div>
     <div class="form-group">
         <label for="inputPassword">Password</label>
-        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password" value="@Request.Form["Password"]">
     </div>
-    <button type="submit" class="btn btn-primary">Create User</button>
+    <button type="submit" name="buttonSubmit" class="btn btn-primary">Create User</button>
 </form>
-}
+@*}*@
