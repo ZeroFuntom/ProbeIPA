@@ -5718,11 +5718,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "G:\\ProbeIPA\\Src\\Secondhand.Tests\\Secondhand.Tests.csproj",
+      "projectUniqueName": "C:\\Git\\ProbeIPA\\Src\\Secondhand.Tests\\Secondhand.Tests.csproj",
       "projectName": "Secondhand.Tests",
-      "projectPath": "G:\\ProbeIPA\\Src\\Secondhand.Tests\\Secondhand.Tests.csproj",
+      "projectPath": "C:\\Git\\ProbeIPA\\Src\\Secondhand.Tests\\Secondhand.Tests.csproj",
       "packagesPath": "C:\\Users\\Cassandra Corrodi\\.nuget\\packages\\",
-      "outputPath": "G:\\ProbeIPA\\Src\\Secondhand.Tests\\obj\\",
+      "outputPath": "C:\\Git\\ProbeIPA\\Src\\Secondhand.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

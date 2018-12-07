@@ -12,3 +12,17 @@ G:\ProbeIPA\Src\Secondhand.Tests\obj\Debug\netcoreapp2.0\Secondhand.Tests.Assemb
 G:\ProbeIPA\Src\Secondhand.Tests\obj\Debug\netcoreapp2.0\Secondhand.Tests.AssemblyInfo.cs
 G:\ProbeIPA\Src\Secondhand.Tests\obj\Debug\netcoreapp2.0\Secondhand.Tests.dll
 G:\ProbeIPA\Src\Secondhand.Tests\obj\Debug\netcoreapp2.0\Secondhand.Tests.pdb
+C:\Git\ProbeIPA\Src\Secondhand.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Git\ProbeIPA\Src\Secondhand.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Git\ProbeIPA\Src\Secondhand.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Git\ProbeIPA\Src\Secondhand.Tests\bin\Debug\netcoreapp2.0\Secondhand.Tests.deps.json
+C:\Git\ProbeIPA\Src\Secondhand.Tests\bin\Debug\netcoreapp2.0\Secondhand.Tests.runtimeconfig.json
+C:\Git\ProbeIPA\Src\Secondhand.Tests\bin\Debug\netcoreapp2.0\Secondhand.Tests.runtimeconfig.dev.json
+C:\Git\ProbeIPA\Src\Secondhand.Tests\bin\Debug\netcoreapp2.0\Secondhand.Tests.dll
+C:\Git\ProbeIPA\Src\Secondhand.Tests\bin\Debug\netcoreapp2.0\Secondhand.Tests.pdb
+C:\Git\ProbeIPA\Src\Secondhand.Tests\obj\Debug\netcoreapp2.0\Secondhand.Tests.csprojResolveAssemblyReference.cache
+C:\Git\ProbeIPA\Src\Secondhand.Tests\obj\Debug\netcoreapp2.0\Secondhand.Tests.csproj.CoreCompileInputs.cache
+C:\Git\ProbeIPA\Src\Secondhand.Tests\obj\Debug\netcoreapp2.0\Secondhand.Tests.AssemblyInfoInputs.cache
+C:\Git\ProbeIPA\Src\Secondhand.Tests\obj\Debug\netcoreapp2.0\Secondhand.Tests.AssemblyInfo.cs
+C:\Git\ProbeIPA\Src\Secondhand.Tests\obj\Debug\netcoreapp2.0\Secondhand.Tests.dll
+C:\Git\ProbeIPA\Src\Secondhand.Tests\obj\Debug\netcoreapp2.0\Secondhand.Tests.pdb

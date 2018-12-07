@@ -2,6 +2,7 @@
 using Autofac;
 using Autofac.Integration.Mvc;
 using Secondhand.BusinessLogic.Items;
+using Secondhand.BusinessLogic.Users;
 using Secondhand.Domain.Model;
 using Secondhand.Domain.Services;
 
@@ -18,7 +19,7 @@ namespace SecondhandTrade
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
             builder.RegisterType<ItemService>().As<IItemService>();
             builder.RegisterType<ItemRepository>().As<IItemRepository>();
-            //builder.RegisterType<UserService>().As<IUserService>();
+            builder.RegisterType<UserService>().As<IUserService>();
             builder.RegisterType<UserRepository>().As<IUserRepository>();
             builder.RegisterType<SecondhandModelContainer>().As<ISecondhandContext>();
 

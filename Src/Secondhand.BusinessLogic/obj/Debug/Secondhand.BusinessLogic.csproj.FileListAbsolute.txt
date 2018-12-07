@@ -11,3 +11,16 @@ G:\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\Secondhand.Domain.dll.config
 G:\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\EntityFramework.xml
 G:\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
 G:\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\Secondhand.BusinessLogic.dll
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\Secondhand.BusinessLogic.pdb
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\Secondhand.Domain.dll
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\EntityFramework.dll
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\Secondhand.Domain.pdb
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\Secondhand.Domain.dll.config
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\EntityFramework.xml
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\obj\Debug\Secondhand.BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\obj\Debug\Secondhand.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\obj\Debug\Secondhand.BusinessLogic.dll
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\obj\Debug\Secondhand.BusinessLogic.pdb

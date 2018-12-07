@@ -9,3 +9,14 @@ G:\ProbeIPA\Src\Secondhand.Domain\obj\Debug\Secondhand.Domain.csprojResolveAssem
 G:\ProbeIPA\Src\Secondhand.Domain\obj\Debug\Secondhand.Domain.csproj.CoreCompileInputs.cache
 G:\ProbeIPA\Src\Secondhand.Domain\obj\Debug\Secondhand.Domain.dll
 G:\ProbeIPA\Src\Secondhand.Domain\obj\Debug\Secondhand.Domain.pdb
+C:\Git\ProbeIPA\Src\Secondhand.Domain\bin\Debug\Secondhand.Domain.dll.config
+C:\Git\ProbeIPA\Src\Secondhand.Domain\bin\Debug\Secondhand.Domain.dll
+C:\Git\ProbeIPA\Src\Secondhand.Domain\bin\Debug\Secondhand.Domain.pdb
+C:\Git\ProbeIPA\Src\Secondhand.Domain\bin\Debug\EntityFramework.dll
+C:\Git\ProbeIPA\Src\Secondhand.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Git\ProbeIPA\Src\Secondhand.Domain\bin\Debug\EntityFramework.xml
+C:\Git\ProbeIPA\Src\Secondhand.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Git\ProbeIPA\Src\Secondhand.Domain\obj\Debug\Secondhand.Domain.csproj.CoreCompileInputs.cache
+C:\Git\ProbeIPA\Src\Secondhand.Domain\obj\Debug\Secondhand.Domain.dll
+C:\Git\ProbeIPA\Src\Secondhand.Domain\obj\Debug\Secondhand.Domain.pdb
+C:\Git\ProbeIPA\Src\Secondhand.Domain\obj\Debug\Secondhand.Domain.csprojResolveAssemblyReference.cache
