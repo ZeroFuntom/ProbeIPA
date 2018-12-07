@@ -9,6 +9,8 @@ namespace SecondhandTrade.Models
 {
     public class AddItemVm
     {
+        public ICollection<int> Id { get; set; }
+
         [DisplayName("Item Name")]
         [Required(ErrorMessage = "Please enter something!")]
         [StringLength(50, ErrorMessage = "You overran max-lenght")]
@@ -22,16 +24,18 @@ namespace SecondhandTrade.Models
         [DisplayName("Image")]
         [Required(ErrorMessage = "Please enter something!")]
         [StringLength(50, ErrorMessage = "You overran max-lenght")]
-        public string Image { get; set; }
+        public byte[] Image { get; set; }
 
         [DisplayName("Year")]
         [Required(ErrorMessage = "Please enter something!")]
         [StringLength(50, ErrorMessage = "You overran max-lenght")]
-        public string Year { get; set; }
+        public int Year { get; set; }
 
         [DisplayName("Price")]
         [Required(ErrorMessage = "Please enter something!")]
         [StringLength(50, ErrorMessage = "You overran max-lenght")]
-        public string Price { get; set; }
+        public int Price { get; set; }
+
+        public int UserId { get; set; }
     }
 }

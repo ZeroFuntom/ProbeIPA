@@ -19,5 +19,10 @@ namespace Secondhand.Domain.Services
         {
             return _secondhandContext.Users;
         }
+
+        public void SaveUser(User user)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

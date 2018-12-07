@@ -1,0 +1,7 @@
+C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\b\Secondhand.Domain\bin\Debug\Secondhand.Domain.dll.config
+C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\b\Secondhand.Domain\bin\Debug\Secondhand.Domain.dll
+C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\b\Secondhand.Domain\bin\Debug\Secondhand.Domain.pdb
+C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\i\Secondhand.Domain\Debug\Secondhand.Domain.csprojResolveAssemblyReference.cache
+C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\i\Secondhand.Domain\Debug\Secondhand.Domain.csproj.CoreCompileInputs.cache
+C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\i\Secondhand.Domain\Debug\Secondhand.Domain.dll
+C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\i\Secondhand.Domain\Debug\Secondhand.Domain.pdb

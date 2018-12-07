@@ -18,5 +18,10 @@ namespace Secondhand.BusinessLogic.Users
         {
             return _userRepository.GetAll().OrderBy(user => user.UserName);
         }
+
+        public void SaveUser(User user)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

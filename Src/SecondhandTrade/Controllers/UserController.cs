@@ -16,16 +16,16 @@ namespace SecondhandTrade.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            return View(_userService.GetUsers());
+            return View(new User());
         }
 
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Save(User user)
-        //{
-        //    user.UserName = HttpContext.User.Identity.Name;
-        //    user.UserName(user);
-        //    return RedirectToAction("Index");
-        //}
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Save(User user)
+        {
+            user.UserName = HttpContext.User.Identity.Name;
+            _userService.SaveUser(user);
+            return RedirectToAction("Index");
+        }
     }
 }

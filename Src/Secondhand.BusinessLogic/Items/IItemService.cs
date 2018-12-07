@@ -6,5 +6,6 @@ namespace Secondhand.BusinessLogic.Items
     public interface IItemService
     {
         IEnumerable<Item> GetItems();
+        void AddItem(Item item, ICollection<int> ItemId);
     }
 }
