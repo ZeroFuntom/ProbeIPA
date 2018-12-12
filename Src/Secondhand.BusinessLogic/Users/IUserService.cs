@@ -6,6 +6,7 @@ namespace Secondhand.BusinessLogic.Users
     public interface IUserService
     {
         IEnumerable<User> GetUsers();
+        User GetUserByUserName(string userName);
         void SaveUser(User user);
     }
 }

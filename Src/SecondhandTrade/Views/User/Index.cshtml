@@ -1,65 +1,73 @@
 ﻿@using Secondhand.Domain.Model
 @model User
 
-@*@using (Html.BeginForm("Save", "User", FormMethod.Post))
-{*@
-
-@{
-    var UserName = "";
-    var FirstName = "";
-    var LastName = "";
-    var Street = "";
-    var City = "";
-    var Zip = "";
-    var Country = "";
-    var Password = "";
-
-    if (IsPost)
-    {
-        UserName = Request.Form["UserName"];
-        FirstName = Request.Form["FirstName"];
-        LastName = Request.Form["LastName"];
-        Street = Request.Form["Street"];
-        City = Request.Form["City"];
-        Zip = Request.Form["Zip"];
-        Country = Request.Form["Country"];
-        Password = Request.Form["Password"];
-    }
-}
-
-<form>
+@using (Html.BeginForm("Save", "User", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
     <div class="form-group">
-        <label for="inputEmail">User Name</label>
-        <input type="text" class="form-control" id="inputEmail" placeholder="User Name" value="@Request.Form["UserName"]">
+        <label for="inputUserName">User Name</label>
+        @Html.TextBoxFor(u => u.UserName, new
+        {
+            placeholder ="Username",
+            @class ="form-control"
+        })
     </div>
     <div class="form-group">
-        <label for="inputPassword">First Name</label>
-        <input type="text" class="form-control" id="inputPassword" placeholder="First Name" value="@Request.Form["FirstName"]">
+        <label for="inputFirstName">First Name</label>
+        @Html.TextBoxFor(u => u.FirstName, new
+        {
+            placeholder = "First Name",
+            @class = "form-control"
+        })
     </div>
     <div class="form-group">
-        <label for="inputPassword">Last Name</label>
-        <input type="text" class="form-control" id="inputPassword" placeholder="Last Name" value="@Request.Form["LastName"]">
+        <label for="inputLastName">Last Name</label>
+        @Html.TextBoxFor(u => u.LastName, new
+        {
+            placeholder = "Last Name",
+            @class = "form-control"
+        })
     </div>
     <div class="form-group">
-        <label for="inputPassword">Street</label>
-        <input type="text" class="form-control" id="inputPassword" placeholder="Street" value="@Request.Form["Street"]">
+        <label for="inputStreet">Street</label>
+        @Html.TextBoxFor(u => u.Street, new
+        {
+            placeholder = "Street",
+            @class = "form-control"
+        })
     </div>
     <div class="form-group">
-        <label for="inputPassword">City</label>
-        <input type="text" class="form-control" id="inputPassword" placeholder="City" value="@Request.Form["City"]">
+        <label for="inputCity">City</label>
+        @Html.TextBoxFor(u => u.City, new
+        {
+            placeholder = "City",
+            @class = "form-control"
+        })
     </div>
     <div class="form-group">
-        <label for="inputPassword">ZIP Code</label>
-        <input type="text" class="form-control" id="inputPassword" placeholder="ZIP Code" value="@Request.Form["Zip"]">
+        <label for="inputZip">ZIP Code</label>
+        @Html.TextBoxFor(u => u.Zip, new
+        {
+            placeholder = "ZIP Code",
+            @class = "form-control"
+        })
     </div>
     <div class="form-group">
-        <label for="inputPassword">Country</label>
-        <input type="text" class="form-control" id="inputPassword" placeholder="Country" value="@Request.Form["Country"]">
+        <label for="inputCountry">Country</label>
+        @Html.TextBoxFor(u => u.Country, new
+        {
+            placeholder = "Country",
+            @class = "form-control"
+        })
     </div>
     <div class="form-group">
         <label for="inputPassword">Password</label>
-        <input type="password" class="form-control" id="inputPassword" placeholder="Password" value="@Request.Form["Password"]">
+        @Html.TextBoxFor(u => u.Password, new
+        {
+            placeholder = "Password",
+            @class = "form-control",
+            @type = "password"
+        })
     </div>
-    <button type="submit" name="buttonSubmit" class="btn btn-primary">Create User</button>
-</form>
-@*}*@
+    <button type="submit" name="buttonSubmit" class="btn btn-primary">Create User</button> 
+}

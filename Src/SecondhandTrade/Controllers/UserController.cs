@@ -1,8 +1,6 @@
-﻿using System.Data.Entity;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using Secondhand.BusinessLogic.Users;
 using Secondhand.Domain.Model;
-using Secondhand.Domain.Services;
 
 namespace SecondhandTrade.Controllers
 {
@@ -21,8 +19,13 @@ namespace SecondhandTrade.Controllers
             return View(new User());
         }
 
-        //[HttpPut]
-        //Implement this
-
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Save(User user)
+        {
+            user.UserName = HttpContext.User.Identity.Name;
+            _userService.SaveUser(user);
+            return RedirectToAction("Index");
+        }
     }
 }

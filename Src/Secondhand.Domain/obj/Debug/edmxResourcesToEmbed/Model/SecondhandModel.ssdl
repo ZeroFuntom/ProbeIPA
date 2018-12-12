@@ -20,6 +20,7 @@
     <Property Name="City" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Zip" Type="int" Nullable="false" />
     <Property Name="Country" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="Items">
     <Key>

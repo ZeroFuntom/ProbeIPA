@@ -19,9 +19,17 @@ namespace Secondhand.BusinessLogic.Users
             return _userRepository.GetAll().OrderBy(user => user.UserName);
         }
 
+        public User GetUserByUserName(string userName)
+        {
+            return _userRepository.GetAll().FirstOrDefault(user => user.UserName == userName) ?? new User()
+            {
+                UserName = userName
+            };
+        }
+
         public void SaveUser(User user)
         {
-            throw new System.NotImplementedException();
+            _userRepository.SaveUser(user);
         }
     }
 }

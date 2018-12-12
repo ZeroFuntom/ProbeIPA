@@ -223,7 +223,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Secondhand.BusinessLogic\Secondhand.BusinessLogic.csproj">
-      <Project>{B7F7086E-E02E-46FF-A331-32E702492161}</Project>
+      <Project>{b7f7086e-e02e-46ff-a331-32e702492161}</Project>
       <Name>Secondhand.BusinessLogic</Name>
     </ProjectReference>
     <ProjectReference Include="..\Secondhand.Domain\Secondhand.Domain.csproj">

@@ -17,8 +17,12 @@ namespace SecondhandTrade
             // Register your MVC controllers. (MvcApplication is the name of
             // the class in Global.asax.)
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
+
+            //Items
             builder.RegisterType<ItemService>().As<IItemService>();
             builder.RegisterType<ItemRepository>().As<IItemRepository>();
+
+            //Users
             builder.RegisterType<UserService>().As<IUserService>();
             builder.RegisterType<UserRepository>().As<IUserRepository>();
             builder.RegisterType<SecondhandModelContainer>().As<ISecondhandContext>();

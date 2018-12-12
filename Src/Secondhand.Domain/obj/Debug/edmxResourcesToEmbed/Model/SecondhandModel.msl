@@ -12,6 +12,7 @@
           <ScalarProperty Name="City" ColumnName="City" />
           <ScalarProperty Name="Zip" ColumnName="Zip" />
           <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
