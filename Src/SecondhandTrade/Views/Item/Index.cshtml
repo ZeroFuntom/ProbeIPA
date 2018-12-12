@@ -1,20 +1,15 @@
 ﻿@using Secondhand.Domain.Model
 @model IEnumerable<Item>
-@{
-    ViewBag.Title = "Items";
-}
 
-@*@foreach (Item item in Model)
+@foreach (Item item in Model)
 {
-    @Html.AntiForgeryToken()*@
+    @Html.AntiForgeryToken()
     <a>
         <div class="col-md-4">
-            <p>
-                <img src="https://wanderlustandsmoke.files.wordpress.com/2017/08/filipino-tabo-hinoki-plastic-ladle-1.jpg?w=286&h=212" />
-            </p>
-            <h2>ItemName</h2>
-            <p>Price</p>
+            <p>@item.Image</p>
+            <p>@item.ItemName</p>
+            <p>@item.Price</p>
             @Html.ActionLink("Details", "Detail", "Item")
         </div>
-    </a>   
-@*}*@
+    </a>
+}

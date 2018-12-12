@@ -1,4 +1,6 @@
-﻿using System.Web.Mvc;
+﻿using System.Security.Cryptography.X509Certificates;
+using System.Web.Mvc;
+using Microsoft.ApplicationInsights.Extensibility.Implementation;
 using Secondhand.BusinessLogic.Users;
 using Secondhand.Domain.Model;
 
@@ -14,9 +16,10 @@ namespace SecondhandTrade.Controllers
         }
 
         [HttpGet]
-        public ActionResult Index()
+        public ActionResult Index(int id)
         {
-            return View(new User());
+            var userName = HttpContext.User.Identity.Name;
+            return View(_userService.GetUserByUserName(userName));
         }
 
         [HttpPost]
