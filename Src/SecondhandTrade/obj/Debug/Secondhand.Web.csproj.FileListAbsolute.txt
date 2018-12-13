@@ -103,6 +103,8 @@ C:\Git\ProbeIPA\Src\SecondhandTrade\bin\SecondhandTrade.pdb
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\Antlr3.Runtime.dll
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\Autofac.dll
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\Autofac.Integration.Mvc.dll
+C:\Git\ProbeIPA\Src\SecondhandTrade\bin\EntityFramework.dll
+C:\Git\ProbeIPA\Src\SecondhandTrade\bin\EntityFramework.SqlServer.dll
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\Microsoft.AI.DependencyCollector.dll
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -123,13 +125,13 @@ C:\Git\ProbeIPA\Src\SecondhandTrade\bin\System.Web.WebPages.Deployment.dll
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\System.Web.WebPages.dll
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\System.Web.WebPages.Razor.dll
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\WebGrease.dll
-C:\Git\ProbeIPA\Src\SecondhandTrade\bin\EntityFramework.dll
-C:\Git\ProbeIPA\Src\SecondhandTrade\bin\EntityFramework.SqlServer.dll
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\Secondhand.BusinessLogic.pdb
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\Secondhand.Domain.pdb
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\Secondhand.Domain.dll.config
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\Autofac.xml
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\Autofac.Integration.Mvc.xml
+C:\Git\ProbeIPA\Src\SecondhandTrade\bin\EntityFramework.xml
+C:\Git\ProbeIPA\Src\SecondhandTrade\bin\EntityFramework.SqlServer.xml
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\System.Web.Helpers.xml
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\System.Web.Mvc.xml
@@ -145,8 +147,6 @@ C:\Git\ProbeIPA\Src\SecondhandTrade\bin\Microsoft.AI.DependencyCollector.xml
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\Microsoft.AI.WindowsServer.xml
 C:\Git\ProbeIPA\Src\SecondhandTrade\bin\Microsoft.AI.Web.xml
-C:\Git\ProbeIPA\Src\SecondhandTrade\bin\EntityFramework.xml
-C:\Git\ProbeIPA\Src\SecondhandTrade\bin\EntityFramework.SqlServer.xml
 C:\Git\ProbeIPA\Src\SecondhandTrade\obj\Debug\Secondhand.Web.csprojResolveAssemblyReference.cache
 C:\Git\ProbeIPA\Src\SecondhandTrade\obj\Debug\Secondhand.Web.csproj.CoreCompileInputs.cache
 C:\Git\ProbeIPA\Src\SecondhandTrade\obj\Debug\SecondhandTrade.dll

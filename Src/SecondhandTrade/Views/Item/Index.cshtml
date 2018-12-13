@@ -6,9 +6,9 @@
     @Html.AntiForgeryToken()
     <a>
         <div class="col-md-4">
-            <p>@item.Image</p>
-            <p>@item.ItemName</p>
-            <p>@item.Price</p>
+            <img src="@item.Image" />
+            <p class="description">@item.ItemName</p>
+            <p class="description">@item.Price</p>
             @Html.ActionLink("Details", "Detail", "Item")
         </div>
     </a>

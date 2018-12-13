@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System;
+using System.Security.Cryptography.X509Certificates;
 using System.Web.Mvc;
 using Microsoft.ApplicationInsights.Extensibility.Implementation;
 using Secondhand.BusinessLogic.Users;
@@ -16,10 +17,16 @@ namespace SecondhandTrade.Controllers
         }
 
         [HttpGet]
-        public ActionResult Index(int id)
+        public ActionResult Index()
         {
             var userName = HttpContext.User.Identity.Name;
             return View(_userService.GetUserByUserName(userName));
+        }
+
+        [HttpGet]
+        public ActionResult Welcome()
+        {
+            return View();
         }
 
         [HttpPost]
@@ -28,7 +35,8 @@ namespace SecondhandTrade.Controllers
         {
             user.UserName = HttpContext.User.Identity.Name;
             _userService.SaveUser(user);
-            return RedirectToAction("Index");
+
+            return RedirectToAction("Welcome");
         }
     }
 }

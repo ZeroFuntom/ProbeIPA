@@ -19,4 +19,3 @@ C:\Git\ProbeIPA\Src\Secondhand.Domain\bin\Debug\EntityFramework.SqlServer.xml
 C:\Git\ProbeIPA\Src\Secondhand.Domain\obj\Debug\Secondhand.Domain.csproj.CoreCompileInputs.cache
 C:\Git\ProbeIPA\Src\Secondhand.Domain\obj\Debug\Secondhand.Domain.dll
 C:\Git\ProbeIPA\Src\Secondhand.Domain\obj\Debug\Secondhand.Domain.pdb
-C:\Git\ProbeIPA\Src\Secondhand.Domain\obj\Debug\Secondhand.Domain.csprojResolveAssemblyReference.cache
