@@ -6,7 +6,11 @@
     @Html.AntiForgeryToken()
     <a>
         <div class="col-md-4">
-            <img src="@item.Image" />
+            @{
+                String img64 = Convert.ToBase64String(item.Image);
+                String img64Url = string.Format("data:image/" + item.Image + ";base64,{0}", img64);
+            }
+            <img src="@img64Url" class="itemImage" />
             <p class="description">@item.ItemName</p>
             <p class="description">@item.Price</p>
             @Html.ActionLink("Details", "Detail", "Item")
