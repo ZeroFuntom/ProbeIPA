@@ -24,3 +24,14 @@ C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\obj\Debug\Secondhand.BusinessLogic.
 C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\obj\Debug\Secondhand.BusinessLogic.csproj.CoreCompileInputs.cache
 C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\obj\Debug\Secondhand.BusinessLogic.dll
 C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\obj\Debug\Secondhand.BusinessLogic.pdb
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\System.Web.Helpers.dll
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\System.Web.Razor.dll
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\System.Web.WebPages.dll
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\System.Web.Helpers.xml
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\System.Web.Razor.xml
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\System.Web.WebPages.xml
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Git\ProbeIPA\Src\Secondhand.BusinessLogic\bin\Debug\System.Web.WebPages.Razor.xml

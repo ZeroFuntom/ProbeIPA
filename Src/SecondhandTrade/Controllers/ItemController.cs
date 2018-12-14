@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Web.Helpers;
+using System.Web.Mvc;
 using Secondhand.BusinessLogic.Items;
 using Secondhand.Domain.Model;
 using SecondhandTrade.Models;
@@ -18,7 +19,18 @@ namespace SecondhandTrade.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            return View(_itemService.GetItems());
+            var items = _itemService.GetItems();
+            foreach (Item item in items)
+            {
+                item.Image = resizeImage(item.Image);
+            }
+            return View(items);
+        }
+
+        private byte[] resizeImage(byte[] image)
+        {
+            var webImage = new WebImage(image);
+            return webImage.Resize(100, 100, true).GetBytes();
         }
 
         [HttpPost]
