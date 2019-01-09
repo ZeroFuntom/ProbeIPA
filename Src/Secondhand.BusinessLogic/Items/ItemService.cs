@@ -24,5 +24,11 @@ namespace Secondhand.BusinessLogic.Items
         {
             throw new System.NotImplementedException();
         }
+
+        public Item GetItem(int id)
+        {
+            return
+            _itemRepository.GetAll().FirstOrDefault(item => item.Id == id);
+        }
     }
 }

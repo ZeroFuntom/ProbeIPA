@@ -5,6 +5,15 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+.footer {
+    color: #000000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #eee8aa;
+}
+
 .itemContainer {
     cursor: pointer;
     width: 150px;
@@ -491,7 +500,7 @@ mark,
 .blockquote-footer {
   display: block;
   font-size: 80%;
-  color: #6c757d;
+  color: #000000;
 }
 
 .blockquote-footer::before {
@@ -3990,6 +3999,7 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+    background: #004085;
 }
 
 .navbar > .container,
@@ -4900,7 +4910,7 @@ input[type="button"].btn-block {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
+  background-color: #eee8aa;
   border-radius: 0.3rem;
 }
 
@@ -9018,6 +9028,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .navbar {
     display: none;
+    background-color: #eee8aa;
   }
   .badge {
     border: 1px solid #000;

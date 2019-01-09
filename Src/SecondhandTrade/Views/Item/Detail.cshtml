@@ -1,16 +1,23 @@
 ﻿@using Secondhand.Domain.Model
-@model IEnumerable<Item>
+@model Item
 
 <a>
     <div class="col-md-12">
-        <h2>Tabo 1</h2>
+        <h2>@Model.ItemName</h2>
         <p>
-            <img src="https://wanderlustandsmoke.files.wordpress.com/2017/08/filipino-tabo-hinoki-plastic-ladle-1.jpg?w=286&h=212" />
+            <img src="" class="itemImage"/>
         </p>
+        <h5>Description</h5>
         <p>Description</p>
+
+        <h5>Year</h5>
         <p>Year</p>
-        <p>10.00$</p>
-        <p>Seller</p>
+
+        <h5>Price</h5>
+        <p>Price$</p>
+
+        <h5>Seller</h5>
+        <p>UserId</p>
         <button>
             Buy Item
         </button>

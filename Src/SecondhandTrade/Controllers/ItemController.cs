@@ -52,9 +52,9 @@ namespace SecondhandTrade.Controllers
 
         // DETAIL
         [HttpGet]
-        public ActionResult Detail()
+        public ActionResult Detail(int id)
         {
-            return View();
+            return View(_itemService.GetItem(id));
         }
     }
 }
