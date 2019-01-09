@@ -29,6 +29,10 @@
     width: 100px;
 }
 
+.detailImage {
+    width: 300px;
+}
+
 .description {
     cursor: default;
 }
