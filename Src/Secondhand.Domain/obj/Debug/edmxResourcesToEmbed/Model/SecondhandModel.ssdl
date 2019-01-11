@@ -3,7 +3,11 @@
   <EntityContainer Name="SecondhandModelStoreContainer">
     <EntitySet Name="Users" EntityType="SecondhandModel.Store.Users" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Items" EntityType="SecondhandModel.Store.Items" store:Type="Tables" Schema="dbo" />
-    <AssociationSet Name="UserItem" Association="SecondhandModel.Store.UserItem">
+    <AssociationSet Name="SellerItem" Association="SecondhandModel.Store.SellerItem">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Item" EntitySet="Items" />
+    </AssociationSet>
+    <AssociationSet Name="BuyerItem" Association="SecondhandModel.Store.BuyerItem">
       <End Role="User" EntitySet="Users" />
       <End Role="Item" EntitySet="Items" />
     </AssociationSet>
@@ -32,9 +36,10 @@
     <Property Name="Image" Type="varbinary(max)" Nullable="false" />
     <Property Name="Year" Type="int" Nullable="false" />
     <Property Name="Price" Type="int" Nullable="false" />
-    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="SellerUserId" Type="int" Nullable="false" />
+    <Property Name="BuyerUserId" Type="int" Nullable="true" />
   </EntityType>
-  <Association Name="UserItem">
+  <Association Name="SellerItem">
     <End Role="User" Type="SecondhandModel.Store.Users" Multiplicity="1" />
     <End Role="Item" Type="SecondhandModel.Store.Items" Multiplicity="*" />
     <ReferentialConstraint>
@@ -42,7 +47,19 @@
         <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="Item">
-        <PropertyRef Name="UserId" />
+        <PropertyRef Name="SellerUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="BuyerItem">
+    <End Role="User" Type="SecondhandModel.Store.Users" Multiplicity="0..1" />
+    <End Role="Item" Type="SecondhandModel.Store.Items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Item">
+        <PropertyRef Name="BuyerUserId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

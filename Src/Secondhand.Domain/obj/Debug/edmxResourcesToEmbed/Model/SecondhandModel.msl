@@ -25,7 +25,8 @@
           <ScalarProperty Name="Image" ColumnName="Image" />
           <ScalarProperty Name="Year" ColumnName="Year" />
           <ScalarProperty Name="Price" ColumnName="Price" />
-          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="SellerUserId" ColumnName="SellerUserId" />
+          <ScalarProperty Name="BuyerUserId" ColumnName="BuyerUserId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -16,25 +16,25 @@ namespace Secondhand.Domain.Services
             return _secondhandContext.Users;
         }
 
-        public void SaveUser(User user)
+        public void UpdateUser(User user)
         {
-            User save = _secondhandContext.Users.FirstOrDefault(u => u.UserName == user.UserName);
-            if (save == null)
+            User update = _secondhandContext.Users.FirstOrDefault(u => u.UserName == user.UserName);
+            if (update == null)
             {
-                save = new User
+                update = new User
                 {
                     UserName = user.UserName
                 };
-                _secondhandContext.Users.Add(save);
+                _secondhandContext.Users.Add(update);
             }
-            save.UserName = user.UserName;
-            save.FirstName = user.FirstName;
-            save.LastName = user.LastName;
-            save.Street = user.Street;
-            save.City = user.City;
-            save.Zip = user.Zip;
-            save.Country = user.Country;
-            save.Password = user.Password;
+            update.UserName = user.UserName;
+            update.FirstName = user.FirstName;
+            update.LastName = user.LastName;
+            update.Street = user.Street;
+            update.City = user.City;
+            update.Zip = user.Zip;
+            update.Country = user.Country;
+            update.Password = user.Password;
 
             _secondhandContext.SaveChanges();
         }

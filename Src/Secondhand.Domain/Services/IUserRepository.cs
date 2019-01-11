@@ -6,6 +6,6 @@ namespace Secondhand.Domain.Services
     public interface IUserRepository
     {
         IQueryable<User> GetAll();
-        void SaveUser(User user);
+        void UpdateUser(User user);
     }
 }

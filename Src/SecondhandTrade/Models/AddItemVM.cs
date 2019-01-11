@@ -35,7 +35,7 @@ namespace SecondhandTrade.Models
         [Required(ErrorMessage = "Please enter something!")]
         [StringLength(50, ErrorMessage = "You overran max-lenght")]
         public int Price { get; set; }
-
-        public int UserId { get; set; }
+        public int SellerUserId { get; set; }
+        public int BuyerUserId { get; set; }
     }
 }

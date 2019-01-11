@@ -3,7 +3,11 @@
   <EntityContainer Name="SecondhandModelContainer" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Users" EntityType="SecondhandModel.User" />
     <EntitySet Name="Items" EntityType="SecondhandModel.Item" />
-    <AssociationSet Name="UserItem" Association="SecondhandModel.UserItem">
+    <AssociationSet Name="SellerItem" Association="SecondhandModel.SellerItem">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Item" EntitySet="Items" />
+    </AssociationSet>
+    <AssociationSet Name="BuyerItem" Association="SecondhandModel.BuyerItem">
       <End Role="User" EntitySet="Users" />
       <End Role="Item" EntitySet="Items" />
     </AssociationSet>
@@ -20,8 +24,9 @@
     <Property Name="City" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
     <Property Name="Zip" Type="Int32" Nullable="false" />
     <Property Name="Country" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
-    <NavigationProperty Name="Items" Relationship="SecondhandModel.UserItem" FromRole="User" ToRole="Item" />
-    <Property Name="Password" Type="String" Nullable="false" />
+    <NavigationProperty Name="Items" Relationship="SecondhandModel.SellerItem" FromRole="User" ToRole="Item" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="BoughtItems" Relationship="SecondhandModel.BuyerItem" FromRole="User" ToRole="Item" />
   </EntityType>
   <EntityType Name="Item">
     <Key>
@@ -30,13 +35,15 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="ItemName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
     <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
-    <Property Name="Image" Type="Binary" Nullable="false" />
+    <Property Name="Image" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
     <Property Name="Year" Type="Int32" Nullable="false" />
     <Property Name="Price" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
-    <NavigationProperty Name="User" Relationship="SecondhandModel.UserItem" FromRole="Item" ToRole="User" />
-    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Seller" Relationship="SecondhandModel.SellerItem" FromRole="Item" ToRole="User" />
+    <Property Name="SellerUserId" Type="Int32" Nullable="false" />
+    <Property Name="BuyerUserId" Type="Int32" Nullable="true" />
+    <NavigationProperty Name="Buyer" Relationship="SecondhandModel.BuyerItem" FromRole="Item" ToRole="User" />
   </EntityType>
-  <Association Name="UserItem">
+  <Association Name="SellerItem">
     <End Type="SecondhandModel.User" Role="User" Multiplicity="1" />
     <End Type="SecondhandModel.Item" Role="Item" Multiplicity="*" />
     <ReferentialConstraint>
@@ -44,7 +51,19 @@
         <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="Item">
-        <PropertyRef Name="UserId" />
+        <PropertyRef Name="SellerUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="BuyerItem">
+    <End Type="SecondhandModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="SecondhandModel.Item" Role="Item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Item">
+        <PropertyRef Name="BuyerUserId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

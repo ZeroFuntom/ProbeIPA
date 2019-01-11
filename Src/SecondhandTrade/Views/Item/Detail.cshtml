@@ -1,4 +1,6 @@
-﻿@using Secondhand.Domain.Model
+﻿@using System.Data.Entity
+@using System.Web.Mvc.Html
+@using Secondhand.Domain.Model
 @model Item
 
 <a>
@@ -18,11 +20,11 @@
         <p>@Model.Year</p>
 
         <h5>Price</h5>
-        <p>@Model.Price$</p>
+        <p>$@Model.Price</p>
 
         <h5>Seller</h5>
-        <p>@Model.UserId</p>
-        <button>
+        <p>@Model.Seller.UserName</p>
+        <button class="btn btn-warning" name="deleteButton" onclick="buyItem">
             Buy Item
         </button>
     </div>

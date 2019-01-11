@@ -7,7 +7,8 @@
       <Diagram DiagramId="021920ff5cc8443c85af89438e590632" Name="Diagram1" >
         <EntityTypeShape EntityType="SecondhandModel.User" Width="1.5" PointX="0.75" PointY="2.375" />
         <EntityTypeShape EntityType="SecondhandModel.Item" Width="1.5" PointX="4.125" PointY="2.375" />
-        <AssociationConnector Association="SecondhandModel.UserItem" />
+        <AssociationConnector Association="SecondhandModel.SellerItem" />
+        <AssociationConnector Association="SecondhandModel.BuyerItem" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

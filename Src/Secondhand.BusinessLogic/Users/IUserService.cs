@@ -7,6 +7,6 @@ namespace Secondhand.BusinessLogic.Users
     {
         IEnumerable<User> GetUsers();
         User GetUserByUserName(string userName);
-        void SaveUser(User user);
+        void UpdateUser(User user);
     }
 }

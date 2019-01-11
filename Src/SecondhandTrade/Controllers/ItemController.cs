@@ -1,4 +1,5 @@
-﻿using System.Web.Helpers;
+﻿using System;
+using System.Web.Helpers;
 using System.Web.Mvc;
 using Secondhand.BusinessLogic.Items;
 using Secondhand.Domain.Model;
@@ -44,7 +45,8 @@ namespace SecondhandTrade.Controllers
                 Image = item.Image,
                 Year = item.Year,
                 Price = item.Price,
-                UserId = item.UserId
+                SellerUserId = item.SellerUserId,
+                BuyerUserId = item.BuyerUserId
             },
             item.Id);
             return RedirectToAction("Index");
@@ -55,6 +57,12 @@ namespace SecondhandTrade.Controllers
         public ActionResult Detail(int id)
         {
             return View(_itemService.GetItem(id));
+        }
+
+        [HttpDelete]
+        protected void buyItem(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -28,9 +28,9 @@ namespace Secondhand.BusinessLogic.Users
             };
         }
 
-        public void SaveUser(User user)
+        public void UpdateUser(User user)
         {
-            _userRepository.SaveUser(user);
+            _userRepository.UpdateUser(user);
         }
     }
 }

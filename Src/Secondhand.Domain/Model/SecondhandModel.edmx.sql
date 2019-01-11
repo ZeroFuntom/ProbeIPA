@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 12/07/2018 14:48:50
+-- Date Created: 01/11/2019 10:28:30
 -- Generated from EDMX file: C:\Git\ProbeIPA\Src\Secondhand.Domain\Model\SecondhandModel.edmx
 -- --------------------------------------------------
 
@@ -25,11 +25,11 @@ GO
 -- Dropping existing tables
 -- --------------------------------------------------
 
-IF OBJECT_ID(N'[dbo].[Users]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[Users];
-GO
 IF OBJECT_ID(N'[dbo].[Items]', 'U') IS NOT NULL
     DROP TABLE [dbo].[Items];
+GO
+IF OBJECT_ID(N'[dbo].[Users]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[Users];
 GO
 
 -- --------------------------------------------------
@@ -58,7 +58,8 @@ CREATE TABLE [dbo].[Items] (
     [Image] varbinary(max)  NOT NULL,
     [Year] int  NOT NULL,
     [Price] int  NOT NULL,
-    [UserId] int  NOT NULL
+    [SellerUserId] int  NOT NULL,
+    [BuyerUserId] int  NULL
 );
 GO
 
@@ -82,19 +83,34 @@ GO
 -- Creating all FOREIGN KEY constraints
 -- --------------------------------------------------
 
--- Creating foreign key on [UserId] in table 'Items'
+-- Creating foreign key on [SellerUserId] in table 'Items'
 ALTER TABLE [dbo].[Items]
-ADD CONSTRAINT [FK_UserItem]
-    FOREIGN KEY ([UserId])
+ADD CONSTRAINT [FK_SellerItem]
+    FOREIGN KEY ([SellerUserId])
     REFERENCES [dbo].[Users]
         ([Id])
     ON DELETE NO ACTION ON UPDATE NO ACTION;
 GO
 
--- Creating non-clustered index for FOREIGN KEY 'FK_UserItem'
-CREATE INDEX [IX_FK_UserItem]
+-- Creating non-clustered index for FOREIGN KEY 'FK_SellerItem'
+CREATE INDEX [IX_FK_SellerItem]
 ON [dbo].[Items]
-    ([UserId]);
+    ([SellerUserId]);
+GO
+
+-- Creating foreign key on [BuyerUserId] in table 'Items'
+ALTER TABLE [dbo].[Items]
+ADD CONSTRAINT [FK_BuyerItem]
+    FOREIGN KEY ([BuyerUserId])
+    REFERENCES [dbo].[Users]
+        ([Id])
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+GO
+
+-- Creating non-clustered index for FOREIGN KEY 'FK_BuyerItem'
+CREATE INDEX [IX_FK_BuyerItem]
+ON [dbo].[Items]
+    ([BuyerUserId]);
 GO
 
 -- --------------------------------------------------

@@ -34,7 +34,7 @@ namespace SecondhandTrade.Controllers
         public ActionResult Save(User user)
         {
             user.UserName = HttpContext.User.Identity.Name;
-            _userService.SaveUser(user);
+            _userService.UpdateUser(user);
 
             return RedirectToAction("Welcome");
         }

@@ -20,8 +20,10 @@ namespace Secondhand.Domain.Model
         public byte[] Image { get; set; }
         public int Year { get; set; }
         public int Price { get; set; }
-        public int UserId { get; set; }
+        public int SellerUserId { get; set; }
+        public Nullable<int> BuyerUserId { get; set; }
     
-        public virtual User User { get; set; }
+        public virtual User Seller { get; set; }
+        public virtual User Buyer { get; set; }
     }
 }
