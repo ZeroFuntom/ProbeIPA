@@ -13,14 +13,10 @@ namespace Secondhand.BusinessLogic.Items
         {
             _itemRepository = itemRepository;
         }
-
-        public ItemService(IItemRepository, repository)
-        {
-        }
-
+        
         public IEnumerable<Item> GetItems()
         {
-            return _itemRepository.GetAll().OrderBy(item => item.Name);
+            return _itemRepository.GetAll().OrderBy(item => item.ItemName);
         }
     }
 }

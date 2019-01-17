@@ -46,6 +46,11 @@
     <Compile Include="Users\IUserService.cs" />
     <Compile Include="Users\UserService.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Secondhand.Domain\Secondhand.Domain.csproj">
+      <Project>{5638E8EC-750A-4809-A4E0-54534E9AF99C}</Project>
+      <Name>Secondhand.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
