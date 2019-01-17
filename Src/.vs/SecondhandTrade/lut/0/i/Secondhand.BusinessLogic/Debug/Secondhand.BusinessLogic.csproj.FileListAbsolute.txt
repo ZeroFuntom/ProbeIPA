@@ -1,6 +1,0 @@
-C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\b\Secondhand.BusinessLogic\bin\Debug\Secondhand.BusinessLogic.dll
-C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\b\Secondhand.BusinessLogic\bin\Debug\Secondhand.BusinessLogic.pdb
-C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\i\Secondhand.BusinessLogic\Debug\Secondhand.BusinessLogic.csprojResolveAssemblyReference.cache
-C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\i\Secondhand.BusinessLogic\Debug\Secondhand.BusinessLogic.csproj.CoreCompileInputs.cache
-C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\i\Secondhand.BusinessLogic\Debug\Secondhand.BusinessLogic.dll
-C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\i\Secondhand.BusinessLogic\Debug\Secondhand.BusinessLogic.pdb

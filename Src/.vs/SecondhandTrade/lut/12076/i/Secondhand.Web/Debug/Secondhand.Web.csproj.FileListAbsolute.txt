@@ -1,7 +1,0 @@
-C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\b\SecondhandTrade\bin\ApplicationInsights.config
-C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\b\SecondhandTrade\bin\SecondhandTrade.dll.config
-C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\b\SecondhandTrade\bin\SecondhandTrade.dll
-C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\b\SecondhandTrade\bin\SecondhandTrade.pdb
-C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\i\Secondhand.Web\Debug\Secondhand.Web.csproj.CoreCompileInputs.cache
-C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\i\Secondhand.Web\Debug\SecondhandTrade.dll
-C:\Git\ProbeIPA\Src\.vs\SecondhandTrade\lut\0\i\Secondhand.Web\Debug\SecondhandTrade.pdb
