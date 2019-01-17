@@ -24,6 +24,9 @@ namespace SecondhandTrade.Models
         public int Price { get; set; }
 
         [DisplayName("UserId")]
-        public int UserId { get; set; }
+        public int SellerUserId { get; set; }
+
+        [DisplayName("UserId")]
+        public int BuyerUserId { get; set; }
     }
 }

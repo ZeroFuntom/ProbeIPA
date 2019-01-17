@@ -15,9 +15,25 @@ namespace Secondhand.Domain.Services
         {
             _secondhandContext = secondhandContext;
         }
+
         public IQueryable<Item> GetAll()
         {
             return _secondhandContext.Items;
         }
+
+        //public void BuyItem(Item item)
+        //{
+        //    Item buy = _secondhandContext.Items.FirstOrDefault(b => b.BuyerUserId == item.BuyerUserId);
+        //    if (buy == null)
+        //    {
+        //        buy = new Item
+        //        {
+        //            BuyerUserId = item.BuyerUserId
+        //        };
+        //        _secondhandContext.Items.Add(buy);
+        //    }
+        //    buy.BuyerUserId = item.BuyerUserId;
+        //    _secondhandContext.SaveChanges();
+        //}
     }
 }

@@ -2,6 +2,7 @@
 using System.Web.Helpers;
 using System.Web.Mvc;
 using Secondhand.BusinessLogic.Items;
+using Secondhand.BusinessLogic.Users;
 using Secondhand.Domain.Model;
 using SecondhandTrade.Models;
 
@@ -10,10 +11,12 @@ namespace SecondhandTrade.Controllers
     public class ItemController : Controller
     {
         private readonly IItemService _itemService;
+        private readonly IUserService _userService;
 
-        public ItemController(IItemService itemService)
+        public ItemController(IItemService itemService, IUserService userService)
         {
             _itemService = itemService;
+            _userService = userService;
         }
 
         //INDEX
@@ -59,10 +62,12 @@ namespace SecondhandTrade.Controllers
             return View(_itemService.GetItem(id));
         }
 
-        [HttpDelete]
-        protected void buyItem(object sender, EventArgs e)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public void Buy(int id)
         {
-            
+            var buyerName = System.Web.HttpContext.Current.User.Identity.Name;
+            Console.Write(buyerName);
         }
     }
 }
