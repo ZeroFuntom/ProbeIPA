@@ -1,7 +1,4 @@
 ﻿using System.Web.Mvc;
-using Secondhand.BusinessLogic.Teams;
-using Secondhand.Domain.Model;
-using Secondhand.Web.Models;
 
 namespace SecondhandTrade.Controllers
 {
