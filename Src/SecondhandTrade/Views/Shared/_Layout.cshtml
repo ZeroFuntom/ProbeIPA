@@ -8,51 +8,39 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-<div class="jumbotron">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="nav-link">
+            @Html.ActionLink("Home", "Index", "Home")
+        </a>
+        <a class="nav-link">
+            @Html.ActionLink("Items", "Index", "Item")
+        </a>  
+        <a class="nav-link">
+            @Html.ActionLink("Edit Profile", "Index", "User")
+        </a>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Secondhand Trade</h1>
+        </div>
+    </div>
+
     <div class="container">
-        <h1>Secondhand Trade</h1>
+        <div class="row">
+            @RenderBody()
+        </div>
     </div>
-</div>
-<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link">
-                    @Html.ActionLink("Home", "Index", "Home")
-                </a>
-            </li>
-        </ul>
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link">
-                    @Html.ActionLink("Items", "Index", "Item")
-                </a>
-            </li>
-        </ul>
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link">
-                    @Html.ActionLink("Create Profile", "Index", "User")
-                </a>
-            </li>
-        </ul>
-    </div>
-</nav>
 
-<div class="container">
-    <div class="row">
-        @RenderBody()
-    </div>
-</div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 
-@Scripts.Render("~/bundles/jquery")
-@Scripts.Render("~/bundles/bootstrap")
-@RenderSection("scripts", required: false)
+    <footer class="footer fixed-bottom">
+        <div class="container">
+            <span class="text-muted">&copy; Cassandra Corrodi 2018</span>
+        </div>
+    </footer>
 
-<footer class="footer">
-    <div class="container">
-        <p class="text-muted">&copy; Cassandra Corrodi 2018</p>
-    </div>
-</footer>
 </body>
 </html>
