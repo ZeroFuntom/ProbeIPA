@@ -590,7 +590,7 @@ pre code {
 }
 
 .containerItems {
-    background: blue;
+    margin: 0px;
 }
 
 @media (min-width: 576px) {

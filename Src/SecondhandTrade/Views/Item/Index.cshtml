@@ -5,7 +5,7 @@
 {
     @Html.AntiForgeryToken()
     <a>
-        <div class="col-md-4">
+        <div class="col-md-4 containerItems">
             @{
                 String img64 = Convert.ToBase64String(item.Image);
                 String img64Url = string.Format("data:image;base64,{0}", img64);
