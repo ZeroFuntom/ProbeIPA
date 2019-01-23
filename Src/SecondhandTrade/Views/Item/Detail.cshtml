@@ -2,6 +2,9 @@
 @model Item
 
 <a>
+@using (Html.BeginForm("Buy", "Item", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
     <div class="col-md-12">
         <h2>@Model.ItemName</h2>
         @{
@@ -9,7 +12,7 @@
             String img64Url = string.Format("data:image;base64,{0}", img64);
         }
         <p>
-            <img src="@img64Url" class="detailImage" />
+            <img src="@img64Url" class="detailImage"/>
         </p>
         <h5>Description</h5>
         <p>@Model.Description</p>
@@ -22,11 +25,12 @@
 
         <h5>Seller</h5>
         <p>@Model.Seller.UserName</p>
-        
+
         <p hidden>@Model.BuyerUserId</p>
 
-        <button class="btn btn-warning" type="submit" onclick="buyItem">
+        <button class="btn btn-warning" type="submit">
             Buy Item
         </button>
     </div>
+}
 </a>

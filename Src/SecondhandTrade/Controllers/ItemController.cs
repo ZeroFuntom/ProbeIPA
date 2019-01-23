@@ -1,22 +1,24 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Web.Helpers;
 using System.Web.Mvc;
 using Secondhand.BusinessLogic.Items;
 using Secondhand.BusinessLogic.Users;
 using Secondhand.Domain.Model;
 using SecondhandTrade.Models;
+using Microsoft.AspNet.Identity;
 
 namespace SecondhandTrade.Controllers
 {
     public class ItemController : Controller
     {
         private readonly IItemService _itemService;
-        private readonly IUserService _userService;
+        //private readonly IUserService _userService;
 
         public ItemController(IItemService itemService, IUserService userService)
         {
             _itemService = itemService;
-            _userService = userService;
+            //_userService = userService;
         }
 
         //INDEX
@@ -64,10 +66,11 @@ namespace SecondhandTrade.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public void Buy(int id)
+        //public void Buy(int id)
+        public void Buy(Item item)
         {
-            var buyerName = System.Web.HttpContext.Current.User.Identity.Name;
-            Console.Write(buyerName);
+            string buyerName = System.Web.HttpContext.Current.User.Identity.Name;
+            int buyerId = User.Identity.GetUserId<int>();
         }
     }
 }
