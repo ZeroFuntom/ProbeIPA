@@ -6,5 +6,6 @@ namespace Secondhand.Domain.Services
     public interface IItemRepository
     {
         IQueryable<Item> GetAll();
+        void BuyItem(Item item);
     }
 }

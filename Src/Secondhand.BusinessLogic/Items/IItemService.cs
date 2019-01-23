@@ -8,6 +8,6 @@ namespace Secondhand.BusinessLogic.Items
         IEnumerable<Item> GetItems();
         void AddItem(Item item, ICollection<int> ItemId);
         Item GetItem(int id);
-        //void BuyItem(Item item);
+        void BuyItem(Item item);
     }
 }

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Web.Helpers;
 using System.Web.Mvc;
@@ -7,6 +9,7 @@ using Secondhand.BusinessLogic.Users;
 using Secondhand.Domain.Model;
 using SecondhandTrade.Models;
 using Microsoft.AspNet.Identity;
+using Secondhand.Domain.Model;
 
 namespace SecondhandTrade.Controllers
 {
@@ -66,7 +69,6 @@ namespace SecondhandTrade.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        //public void Buy(int id)
         public void Buy(Item item)
         {
             string buyerName = System.Web.HttpContext.Current.User.Identity.Name;

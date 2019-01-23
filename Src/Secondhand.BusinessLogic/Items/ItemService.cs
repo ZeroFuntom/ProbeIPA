@@ -34,9 +34,9 @@ namespace Secondhand.BusinessLogic.Items
             _itemRepository.GetAll().FirstOrDefault(item => item.Id == id);
         }
 
-        //public void BuyItem(int itemId, int userId)
-        //{
-            
-        //}
+        public void BuyItem(Item item)
+        {
+            _itemRepository.BuyItem(item);
+        }
     }
 }
