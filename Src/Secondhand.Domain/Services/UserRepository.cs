@@ -27,7 +27,6 @@ namespace Secondhand.Domain.Services
                 };
                 _secondhandContext.Users.Add(update);
             }
-            update.UserName = user.UserName;
             update.FirstName = user.FirstName;
             update.LastName = user.LastName;
             update.Street = user.Street;

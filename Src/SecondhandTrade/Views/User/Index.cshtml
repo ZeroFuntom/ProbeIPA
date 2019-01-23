@@ -1,15 +1,15 @@
 ﻿@using Secondhand.Domain.Model
 @model User
 
-@using (Html.BeginForm("Save", "User", FormMethod.Post))
+@using (Html.BeginForm("Update", "User", FormMethod.Post))
 {
     @Html.AntiForgeryToken()
     <div class="form-group">
         <label for="inputUserName">User Name</label>
         @Html.TextBoxFor(u => u.UserName, new
         {
-            placeholder ="Username",
-            @class ="form-control",
+            placeholder = "Username",
+            @class = "form-control",
             @readonly = "readonly"
         })
     </div>
@@ -61,5 +61,13 @@
             @class = "form-control"
         })
     </div>
-    <button type="submit" name="buttonSubmit" class="btn btn-primary">Create User</button> 
+    <div class="form-group">
+        <label for="inputPassword">Password</label>
+        @Html.TextBoxFor(u => u.Password, new
+        {
+            placeholder = "Password",
+            @class = "form-control"
+        })
+    </div>
+    <button type="submit" name="buttonSubmit" class="btn btn-primary">Create User</button>
 }

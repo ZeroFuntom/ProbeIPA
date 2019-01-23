@@ -31,12 +31,11 @@ namespace SecondhandTrade.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Save(User user)
+        public ActionResult Update(User user)
         {
             user.UserName = HttpContext.User.Identity.Name;
             _userService.UpdateUser(user);
-
-            return RedirectToAction("Welcome");
+            return RedirectToAction("Index");
         }
     }
 }
