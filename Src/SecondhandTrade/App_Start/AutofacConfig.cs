@@ -25,7 +25,7 @@ namespace SecondhandTrade
             //Users
             builder.RegisterType<UserService>().As<IUserService>();
             builder.RegisterType<UserRepository>().As<IUserRepository>();
-            builder.RegisterType<SecondhandModelContainer>().As<ISecondhandContext>();
+            builder.RegisterType<SecondhandModelContainer>().As<ISecondhandContext>().InstancePerRequest();
 
             // Set the dependency resolver to be Autofac.
             var container = builder.Build();
