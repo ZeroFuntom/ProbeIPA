@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web.Helpers;
 using Secondhand.Domain.Model;
 using Secondhand.Domain.Services;
 
@@ -9,11 +7,16 @@ namespace Secondhand.BusinessLogic.Items
 {
     public class ItemService : IItemService
     {
+        private readonly ISecondhandContext _secondhandContext;
         private readonly IItemRepository _itemRepository;
         private readonly IUserRepository _userRepository;
 
-        public ItemService(IItemRepository itemRepository, IUserRepository userRepository)
+        public ItemService(
+            ISecondhandContext secondhandContext,
+            IItemRepository itemRepository,
+            IUserRepository userRepository)
         {
+            _secondhandContext = secondhandContext;
             _itemRepository = itemRepository;
             _userRepository = userRepository;
         }
@@ -34,9 +37,11 @@ namespace Secondhand.BusinessLogic.Items
             _itemRepository.GetAll().FirstOrDefault(item => item.Id == id);
         }
 
-        public void BuyItem(Item item)
+        public void BuyItem(int id, int buyerId)
         {
-            _itemRepository.BuyItem(item);
+            Item item = _itemRepository.GetAll().FirstOrDefault(i => i.Id == id);
+            item.BuyerUserId = buyerId;
+            _secondhandContext.SaveChanges();
         }
     }
 }
