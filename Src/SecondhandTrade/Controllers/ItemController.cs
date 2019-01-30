@@ -1,27 +1,21 @@
-﻿using System;
-using System.Data;
-using System.Data.SqlClient;
-using System.Diagnostics;
-using System.Web.Helpers;
+﻿using System.Web.Helpers;
 using System.Web.Mvc;
 using Secondhand.BusinessLogic.Items;
 using Secondhand.BusinessLogic.Users;
 using Secondhand.Domain.Model;
 using SecondhandTrade.Models;
-using Microsoft.AspNet.Identity;
-using Secondhand.Domain.Model;
 
 namespace SecondhandTrade.Controllers
 {
     public class ItemController : Controller
     {
         private readonly IItemService _itemService;
-        //private readonly IUserService _userService;
+        private readonly IUserService _userService;
 
         public ItemController(IItemService itemService, IUserService userService)
         {
             _itemService = itemService;
-            //_userService = userService;
+            _userService = userService;
         }
 
         //INDEX
@@ -47,16 +41,16 @@ namespace SecondhandTrade.Controllers
         public ActionResult Add(AddItemVm item)
         {
             _itemService.AddItem(new Item
-            {
-                ItemName = item.ItemName,
-                Description = item.Description,
-                Image = item.Image,
-                Year = item.Year,
-                Price = item.Price,
-                SellerUserId = item.SellerUserId,
-                BuyerUserId = item.BuyerUserId
-            },
-            item.Id);
+                {
+                    ItemName = item.ItemName,
+                    Description = item.Description,
+                    Image = item.Image,
+                    Year = item.Year,
+                    Price = item.Price,
+                    SellerUserId = item.SellerUserId,
+                    BuyerUserId = item.BuyerUserId
+                },
+                item.Id);
             return RedirectToAction("Index");
         }
 
@@ -69,10 +63,16 @@ namespace SecondhandTrade.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public void Buy(Item item)
+        public ActionResult Buy(int id)
         {
+            // Get UserName
             string buyerName = System.Web.HttpContext.Current.User.Identity.Name;
-            int buyerId = User.Identity.GetUserId<int>();
+            // Get ID from UserName
+            int buyerId = _userService.GetUserByUserName(buyerName).Id;
+            // Save ID in Database
+            _itemService.BuyItem(id, buyerId);
+            // Go Back to product list
+            return RedirectToAction("Index");
         }
     }
 }
