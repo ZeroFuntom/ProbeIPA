@@ -1,7 +1,4 @@
-﻿using System;
-using System.Security.Cryptography.X509Certificates;
-using System.Web.Mvc;
-using Microsoft.ApplicationInsights.Extensibility.Implementation;
+﻿using System.Web.Mvc;
 using Secondhand.BusinessLogic.Users;
 using Secondhand.Domain.Model;
 
