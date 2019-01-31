@@ -26,11 +26,6 @@ namespace Secondhand.BusinessLogic.Items
             return _itemRepository.GetAll().OrderBy(item => item.ItemName);
         }
 
-        public IEnumerable<Item> GetPurchasedItems(int buyerId)
-        {
-            return GetItems().Where(i => i.BuyerUserId == buyerId);
-        }
-
         public void AddItem(Item item, ICollection<int> ItemId)
         {
             throw new System.NotImplementedException();
@@ -38,8 +33,17 @@ namespace Secondhand.BusinessLogic.Items
 
         public Item GetItem(int id)
         {
-            return
-            _itemRepository.GetAll().FirstOrDefault(item => item.Id == id);
+            throw new System.NotImplementedException();
+        }
+
+        public IEnumerable<Item> GetItems(int buyerId)
+        {
+            return GetItems().Where(i => i.BuyerUserId == null);
+        }
+
+        public IEnumerable<Item> GetPurchasedItems(int buyerId)
+        {
+            return GetItems().Where(i => i.BuyerUserId == buyerId);
         }
 
         public void BuyItem(int id, int buyerId)

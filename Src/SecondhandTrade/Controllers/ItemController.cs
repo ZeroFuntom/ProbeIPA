@@ -22,11 +22,9 @@ namespace SecondhandTrade.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            var items = _itemService.GetItems();
-            foreach (Item item in items)
-            {
-                item.Image = resizeImage(item.Image);
-            }
+            string buyerName = System.Web.HttpContext.Current.User.Identity.Name;
+            int buyerId = _userService.GetUserByUserName(buyerName).Id;
+            var items = _itemService.GetItems(buyerId);
             return View(items);
         }
 
