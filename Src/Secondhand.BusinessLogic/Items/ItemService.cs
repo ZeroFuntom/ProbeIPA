@@ -26,14 +26,9 @@ namespace Secondhand.BusinessLogic.Items
             return _itemRepository.GetAll().OrderBy(item => item.ItemName);
         }
 
-        public void AddItem(Item item, ICollection<int> ItemId)
-        {
-            throw new System.NotImplementedException();
-        }
-
         public Item GetItem(int id)
         {
-            throw new System.NotImplementedException();
+            return _itemRepository.GetAll().FirstOrDefault(item => item.Id == id);
         }
 
         public IEnumerable<Item> GetItems(int buyerId)

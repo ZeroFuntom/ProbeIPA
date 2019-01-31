@@ -7,7 +7,6 @@ namespace Secondhand.BusinessLogic.Items
     {
         IEnumerable<Item> GetItems(int buyerId);
         IEnumerable<Item> GetPurchasedItems(int buyerId);
-        void AddItem(Item item, ICollection<int> ItemId);
         Item GetItem(int id);
         void BuyItem(int id, int buyerId);
     }
