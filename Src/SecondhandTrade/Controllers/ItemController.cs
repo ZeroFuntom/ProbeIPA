@@ -34,24 +34,6 @@ namespace SecondhandTrade.Controllers
             return webImage.Resize(100, 100, true).GetBytes();
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Add(AddItemVm item)
-        {
-            _itemService.AddItem(new Item
-                {
-                    ItemName = item.ItemName,
-                    Description = item.Description,
-                    Image = item.Image,
-                    Year = item.Year,
-                    Price = item.Price,
-                    SellerUserId = item.SellerUserId,
-                    BuyerUserId = item.BuyerUserId
-                },
-                item.Id);
-            return RedirectToAction("Index");
-        }
-
         // DETAIL
         [HttpGet]
         public ActionResult Detail(int id)
