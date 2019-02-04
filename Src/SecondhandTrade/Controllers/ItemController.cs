@@ -2,8 +2,6 @@
 using System.Web.Mvc;
 using Secondhand.BusinessLogic.Items;
 using Secondhand.BusinessLogic.Users;
-using Secondhand.Domain.Model;
-using SecondhandTrade.Models;
 
 namespace SecondhandTrade.Controllers
 {
