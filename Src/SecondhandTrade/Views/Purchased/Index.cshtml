@@ -1,10 +1,1 @@
-﻿@using Secondhand.Domain.Model
-@model IEnumerable<Item>
-
-@foreach (Item item in Model)
-{
-    @Html.AntiForgeryToken()
-    <ul class="list-group">
-        <li class="list-group-item">@item.ItemName</li>
-    </ul>
-}
+﻿@Html.Partial("~/Views/Item/Index.cshtml")
