@@ -1,6 +1,6 @@
-﻿@using Secondhand.Domain.Model
+﻿@using System.Diagnostics.Eventing.Reader
+@using Secondhand.Domain.Model
 @model Item
-
 <a>
 @using (Html.BeginForm("Buy", "Item", FormMethod.Post))
 {
@@ -8,11 +8,11 @@
     <div class="col-md-12">
         <h2>@Model.ItemName</h2>
         @{
-            String img64 = Convert.ToBase64String(Model.Image);
-            String img64Url = string.Format("data:image;base64,{0}", img64);
+        String img64 = Convert.ToBase64String(Model.Image);
+        String img64Url = string.Format("data:image;base64,{0}", img64);
         }
         <p>
-            <img src="@img64Url" class="detailImage"/>
+            <img src="@img64Url" class="detailImage" />
         </p>
         <h5>Description</h5>
         <p>@Model.Description</p>
@@ -26,11 +26,22 @@
         <h5>Seller</h5>
         <p>@Model.Seller.UserName</p>
 
-        <input type="hidden" name="id" value="@Model.Id"/>
-
-        <button class="btn btn-warning" type="submit">
-            Buy Item
-        </button>
+        @if (Model.BuyerUserId != null)
+        {
+        <div id="showBuyerUserName">
+            <h5>Buyer</h5>
+            <p>@Model.Buyer.UserName</p>
+        </div>
+        }
+        else
+        {
+        <div id="removeButtonAfterPurchase">
+            <button class="btn btn-warning" type="submit">
+                Buy Item
+            </button>
+        </div>
+        }
+        <input type="hidden" name="id" value="@Model.Id" />
     </div>
-}
+        }
 </a>
